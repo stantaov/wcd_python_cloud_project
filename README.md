@@ -4,11 +4,10 @@ This project retrieves job data from the [Muse Job API](https://www.themuse.com/
 
 ## Scenario
 
-We will use the following API URL to retrieve job data from page 50:
+The following API URL to retrieve job data from page 50:
 
 `https://www.themuse.com/api/public/jobs?page=50`
 
-We will only focus on the "Response body" and pay attention to the JSON nested levels.
 
 ## Requirements
 
@@ -21,6 +20,10 @@ The project includes the following files:
 -   A requirements.txt to load dependancies for the Python script
 
 It is recommended to initiate your project environment with a shell script and use a run.sh script to run the Python script.
+
+## Project Diagram
+
+![alt text](https://github.com/stantaov/wcd_python_cloud_project/blob/main/image.png?raw=true)
 
 ## Data Extraction
 
@@ -44,5 +47,3 @@ To get started with the project, follow these steps:
 2.  Run the init.sh shell script to set up the virtual environment and install the required packages.
 3.  Configure the toml file with the appropriate parameters and store your secrets in the separate secrets file.
 4.  Execute run.sh to start the Python run script, which will retrieve the job data from the API, convert it to CSV, and save it to the S3 bucket.
-
-
